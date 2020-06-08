@@ -1,0 +1,4 @@
+ID VALIDATOR (CZ/EN)
+
+CZ: Vytvořit validátor českých rodných čísel
+EN: Create a validator of czech IDs

@@ -4,7 +4,7 @@ def is_leap_year(year: int):
     return True if not (year % 400) else False if not (year % 100) else True if not (year % 4) else False
 
 
-def valid_pid(pid: str, return_data=False):
+def valid_pid(pid: str, detail_data=False):
     try:
         if not pid.isdigit():
             raise ValueError('Personal ID must be a number!')
@@ -50,15 +50,22 @@ def valid_pid(pid: str, return_data=False):
         elif pid_length == 10 and int(pid) % 11:
             raise ValueError(f'Wrong validate of personal ID (modulo 11 not a zero: {pid} % 11 = {int(pid) % 11})')
     except ValueError as err:
-        if return_data:
+        if detail_data:
             return False, err.args[0]
         else:
             return False
 
-    if return_data:
+    if detail_data:
         return True, {'year': year, 'month': month, 'day': day, 'sex': pid_sex}
     else:
         return True
 
 
-valid_pid('5451230142', return_data=True)
+if __name__ == '__main__':
+    print('----- VALID ID -----')
+    print("input:  valid_pid('5451230147', detail_data=True)}")
+    print(f"output: {valid_pid('5451230147', detail_data=True)}")
+    print()
+    print('----- INVALID ID -----')
+    print("input:  valid_pid('5451230142', detail_data=True)}")
+    print(f"output: {valid_pid('5451230142', detail_data=True)}")

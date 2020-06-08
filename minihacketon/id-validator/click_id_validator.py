@@ -3,8 +3,8 @@ from id_validator import valid_pid
 
 
 @click.command()
-@click.option('-p', '--pid', help='Name of the person to greet')
-@click.option('-i', '--info', is_flag=True, help='Name of the person to greet')
+@click.option('-p', '--pid', help='Czech Personal ID')
+@click.option('-i', '--info', is_flag=True, help='Show more info (date and sex / error)')
 def click_valid_pid(pid, info):
     values = valid_pid(pid, info)
 

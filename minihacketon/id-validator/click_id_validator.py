@@ -13,19 +13,19 @@ def click_valid_pid(pid, info):
 
     if info:
         if values[0]:
-            print(valid_text)
-            print(f"Year:  {values[1]['year']:4}")
-            print(f"Month: {values[1]['month']:4}")
-            print(f"Day:   {values[1]['day']:4}")
-            print(f"Sex:   {values[1]['sex']:>4}")
+            click.echo(valid_text)
+            click.echo(f"Year:  {values[1]['year']:4}")
+            click.echo(f"Month: {values[1]['month']:4}")
+            click.echo(f"Day:   {values[1]['day']:4}")
+            click.echo(f"Sex:   {values[1]['sex']:>4}")
         else:
-            print(invalid_text)
-            print(f"Error: {values[1]}")
+            click.echo(invalid_text)
+            click.echo(f"Error: {values[1]}")
     else:
-        if values[0]:
-            print(valid_text)
+        if values:
+            click.echo(valid_text)
         else:
-            print(invalid_text)
+            click.echo(invalid_text)
 
 
 if __name__ == '__main__':

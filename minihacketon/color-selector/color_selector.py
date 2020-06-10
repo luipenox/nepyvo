@@ -6,6 +6,11 @@ class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
         uic.loadUi('color_selector.ui', self)
+
+        #  set a window title
+        self.setWindowTitle('RGB Color Selector')
+
+        #  show the window
         self.show()
 
         # connect the button to the function

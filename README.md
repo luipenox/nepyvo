@@ -1,4 +1,4 @@
-# nepyvo (CZ/EN)
+# nepyvo [CZ/EN]
 
 #### CZ: podpůrné materiály k přednáškám
 

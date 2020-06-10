@@ -1,6 +1,6 @@
 # nepyvo (CZ/EN)
 
-CZ: podpůrné materiál k přednáškám
+#### CZ: podpůrné materiály k přednáškám
 
-EN: supporting materials for lectures
+#### EN: supporting materials for lectures
 
